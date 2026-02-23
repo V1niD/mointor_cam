@@ -81,7 +81,7 @@ def monitorar():
                     msg_volta = f"RECUPERADA: {cam['nome']} ({ip_atual})"
                     print(f"{Fore.GREEN}[OK] {msg_volta}")
                     registrar_log(msg_volta)
-                    enviar_alerta(f"✅ {cam['nome']} ONLINE", "Conexão restabelecida.")
+                    enviar_alerta(f"{cam['nome']} ONLINE", "Conexão restabelecida.")
                     status_anterior[ip_atual] = "online"
                 
                 print(f"{Fore.GREEN}[ONLINE] {cam['nome']} | Modelo: {device_info.Model}")
@@ -92,7 +92,7 @@ def monitorar():
                     print(f"{Fore.RED}[ERRO] {msg_erro}")
                     registrar_log(f"{msg_erro} | Detalhe: {e}")
                     enviar_alerta(
-                        f"⚠️ {cam['nome']} OFFLINE", 
+                        f"{cam['nome']} OFFLINE", 
                         f"Checklist L1: Verificar Switch e Cabo no IP {ip_atual}"
                     )
                     status_anterior[ip_atual] = "offline"
