@@ -27,7 +27,7 @@ def scan_network(network_prefix, start, end, port):
     return found_devices
 
 if __name__ == "__main__":
-    meu_prefixo = "192.168.0" 
+    meu_prefixo = "000.000.0" 
     portas_comuns = [80, 8000, 8080]
 
     todas_cameras = []
