@@ -1,7 +1,7 @@
 [
     {
         "nome": "teste",
-        "ip": "192.168.0.191",
+        "ip": "00.00.00.00",
         "porta": 8000,
         "user": "admin",
         "pass": "senha"
